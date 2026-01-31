@@ -1,0 +1,44 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for theatrical aesthetic */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--midnight-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--spotlight-gold), var(--spotlight-amber));
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--spotlight-amber), var(--spotlight-gold));
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+/* Selection color - stage lighting */
+::selection {
+  background: var(--spotlight-gold);
+  color: var(--midnight-blue);
+  text-shadow: none;
+}
+
+/* Default body styling */
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--midnight-blue);
+  color: var(--spotlight-white);
+}
