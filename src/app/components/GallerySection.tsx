@@ -8,7 +8,7 @@ const shows = [
     id: 1,
     title: 'Show de fuego y Luces',
     description: 'Espectáculo de fuego y luces que combina danza, manipulación de elementos y efectos lumínicos para crear una experiencia visual intensa, segura y memorable.',
-    image: '/Images/FireShow.jpg',
+    image: '/Images/FireShow.gif',
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ const shows = [
     title: 'Valeri cumple sus sueños',
     description:
       'Immerse yourself in a world of neon lights and pulsating energy that ignites the imagination.',
-    image: '/Images/Valeri.jpg',
+    image: '/Images/Valeri.png',
   },
 
 ];
