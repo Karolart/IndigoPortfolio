@@ -183,7 +183,7 @@ export function ContactSection() {
             Diseñado con amor para Índigo Artístico
             por Karol Díaz ·{' '}
             <a
-              href="https://karol-diaz-portfolio-2026.vercel.app/"
+              href="https://github.com/Karolart"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:text-blue-300 transition-colors duration-300"
