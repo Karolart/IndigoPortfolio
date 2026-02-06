@@ -68,16 +68,16 @@ export function WhoWeAreSection() {
 
             <div className="space-y-6 text-[var(--spotlight-white)]/90 text-lg" style={{ fontFamily: "'Inter', sans-serif" }}>
               <p className="leading-relaxed">
-                Desde la primera chispa creativa que nace tras bambalinas hasta el encuentro vivo con las comunidades, 
-                creamos experiencias artísticas que despiertan la imaginación, invitan al juego y generan espacios de disfrute, 
+                Desde la primera chispa creativa que nace tras bambalinas hasta el encuentro vivo con las comunidades,
+                creamos experiencias artísticas que despiertan la imaginación, invitan al juego y generan espacios de disfrute,
                 aprendizaje y reflexión. Cada acción es una composición cuidadosa de movimiento, expresión, pedagogía y
-                talento humano comprometido.efully orchestrated symphony of light, movement, and raw human talent.
+                talento humano comprometido.
               </p>
 
               <p className="leading-relaxed">
                 Nuestro escenario es el territorio donde el arte se encuentra con lo social. Donde el teatro,
-                los personajes, el cuerpo y lo simbólico se convierten en lenguajes de cuidado y transformación. 
-                Cada experiencia cuenta una historia de dedicación colectiva, sensibilidad artística y una búsqueda constante 
+                los personajes, el cuerpo y lo simbólico se convierten en lenguajes de cuidado y transformación.
+                Cada experiencia cuenta una historia de dedicación colectiva, sensibilidad artística y una búsqueda constante
                 por construir entornos protectores, creativos y significativos.
               </p>
             </div>
@@ -166,8 +166,7 @@ export function WhoWeAreSection() {
               textShadow: '0 0 20px rgba(255, 215, 0, 0.2)',
             }}
           >
-            "El espectáculo nunca termina. Vive en los corazones de quienes se atreven a soñar."
-          </p>
+            ÍNDIGO transforma espacios cotidianos en experiencias significativas que inspiran, conectan y despiertan el niño interior.          </p>
         </motion.div>
       </div>
     </section>

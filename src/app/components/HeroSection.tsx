@@ -78,7 +78,7 @@ export function HeroSection() {
           ÍNDIGO
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-indigo-200 to-indigo-300">
-            Arte vivo para celebrar
+            ARTE VIVO PARA CELEBRAR
           </span>
         </motion.h1>
 
@@ -90,7 +90,7 @@ export function HeroSection() {
           className="text-lg md:text-xl mb-14 text-white/85 uppercase tracking-widest max-w-2xl mx-auto"
           style={{ fontFamily: "'Inter', sans-serif" }}
         >
-          Dónde celebrar es crear mundos
+          La alegría como lenguaje universal
         </motion.p>
 
         {/* Audio Button */}
