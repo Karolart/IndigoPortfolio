@@ -2,43 +2,170 @@
 @import './tailwind.css';
 @import './theme.css';
 
-/* Smooth scrolling */
+/* =========================================================
+   GLOBAL SCALE + SMOOTH SCROLL
+========================================================= */
+
 html {
   scroll-behavior: smooth;
+
+  /* ↓ Hace que toda la web se vea
+     más elegante y menos gigante */
+  font-size: 90%;
 }
 
-/* Custom scrollbar for theatrical aesthetic */
-::-webkit-scrollbar {
-  width: 12px;
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+  font-family: 'Inter', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
+
+  line-height: 1.5;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(90, 100, 255, 0.12),
+      transparent 35%
+    ),
+    var(--midnight-blue);
+
+  color: var(--spotlight-white);
 }
 
-::-webkit-scrollbar-track {
-  background: var(--midnight-blue);
-}
+/* =========================================================
+   SELECTION
+========================================================= */
 
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--spotlight-gold), var(--spotlight-amber));
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, var(--spotlight-amber), var(--spotlight-gold));
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
-}
-
-/* Selection color - stage lighting */
 ::selection {
   background: var(--spotlight-gold);
   color: var(--midnight-blue);
   text-shadow: none;
 }
 
-/* Default body styling */
-body {
-  font-family: 'Inter', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: var(--midnight-blue);
-  color: var(--spotlight-white);
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050510;
+}
+
+::-webkit-scrollbar-thumb {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(120,130,255,0.45),
+      rgba(170,120,255,0.45)
+    );
+
+  border-radius: 999px;
+
+  box-shadow:
+    0 0 10px rgba(120,130,255,0.18);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(140,150,255,0.75),
+      rgba(190,140,255,0.75)
+    );
+
+  box-shadow:
+    0 0 16px rgba(120,130,255,0.35);
+}
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================================================
+   IMAGES
+========================================================= */
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+button {
+  outline: none;
+  border: none;
+}
+
+/* =========================================================
+   OPTIONAL CINEMATIC HELPERS
+========================================================= */
+
+/* Glow text helper */
+
+.glow-text {
+  text-shadow:
+    0 0 10px rgba(120,130,255,0.35),
+    0 0 25px rgba(120,130,255,0.2);
+}
+
+/* Glass effect helper */
+
+.glass {
+  background: rgba(255,255,255,0.04);
+
+  backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Smooth hover */
+
+.smooth-hover {
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease,
+    background 0.4s ease;
+}
+
+/* Premium section spacing */
+
+.section-spacing {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+/* Better text rendering */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+/* Better paragraphs */
+
+p {
+  line-height: 1.7;
 }
